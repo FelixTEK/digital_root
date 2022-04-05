@@ -12,7 +12,7 @@ def digitalrootcalc():
   global digits
   global persistence #additive persistence
   if num == 0:
-    num = int(input("Please insert your integer./n> ")) #desired integer
+    num = int(input("Please insert your integer.\n> ")) #desired integer
     orignum = num
     digits = list(int(d) for d in str(num)) #all digits of the specified integer above, kept in a list
   elif num >= 10:
