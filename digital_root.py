@@ -1,8 +1,9 @@
+#FELIXTEK 2022
 droot = 0 #digital root variable
-num = 0
-orignum = 0
-digits = []
-persistence = 1
+num = 0 #number that you want to find a digital root of variable
+orignum = 0 #originally inputted number that you specified in the variable num
+digits = [] #all digits of your number
+persistence = 1 #additive persistence of your digital root finding method
 
 def digitalrootcalc():
   global droot #digital root variable
@@ -11,7 +12,7 @@ def digitalrootcalc():
   global digits
   global persistence #additive persistence
   if num == 0:
-    num = int(input("Insert your integer.")) #desired integer
+    num = int(input("Please insert your integer./n> ")) #desired integer
     orignum = num
     digits = list(int(d) for d in str(num)) #all digits of the specified integer above, kept in a list
   elif num >= 10:
