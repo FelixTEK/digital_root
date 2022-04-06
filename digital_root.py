@@ -13,14 +13,13 @@ def datatypsel(): #data type selection
   global orignum
   global numtyp
   global digits
-  num = 0
   num = input("Please insert your number.\n> ") #desired value
   orignum = num
   num = num.lower()
   digits = list(num)
   if "a" in digits or "b" in digits or "c" in digits or "d" in digits or "e" in digits or "f" in digits:
     try:
-      num = int(float(num))
+      num = int(num, 16)
       num = str(num)
       print("Your value is a hexadecimal value.")
     except ValueError:
